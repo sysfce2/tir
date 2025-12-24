@@ -1,11 +1,6 @@
 #include <windows.h>
 #include <stdio.h>
 
-// missing in mingw-w64 for some reason
-#ifndef SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME
-#define SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME TEXT("SeDelegateSessionUserImpersonatePrivilege")
-#endif
-
 #define MAX_PRIVILEGES 36
 const WCHAR* ALL_TOKEN_PRIVILEGES[MAX_PRIVILEGES] = {
 	SE_ASSIGNPRIMARYTOKEN_NAME,
