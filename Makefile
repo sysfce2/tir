@@ -1,5 +1,5 @@
 CFLAGS = -std=gnu11 -O3
-LDFLAGS = -municode -s
+LDFLAGS = -municode -s -Wl,--no-insert-timestamp
 WARNINGS = -Wall -Wextra -Wpedantic
 CC = x86_64-w64-mingw32-gcc
 
