@@ -6,4 +6,5 @@ COPY . /srv
 
 WORKDIR /srv
 
-RUN make
+RUN make \
+  && sha256sum tir.exe > SHA256SUMS
